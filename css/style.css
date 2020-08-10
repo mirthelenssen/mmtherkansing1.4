@@ -319,7 +319,6 @@ h3 {
     margin: 0 auto;
 }
 ul li {
-    width: 220px;
     color: black;
 }
 ul li a {
@@ -328,8 +327,10 @@ ul li a {
     font-weight: bold;
     font-size: 0.7500em;
     color: white;
-    margin-left: 72px;
-    width: 220px;
+    width: 200px;
+}
+div#tabs .ui-state-active  {
+    background-color: red;
 }
 #tabs-1 {
     width: 400px;
@@ -348,7 +349,7 @@ ul li a {
     margin-left: 40px;
 }
 .textright {
-    /* float: right; */
+    float: right;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
     color: red;
@@ -378,9 +379,6 @@ ul li a {
     width: 300px;
     margin: 0 auto;
     margin-top: 40px;
-}
-div#tabs .ui-state-active  {
-    background-color: red;
 }
 
 
