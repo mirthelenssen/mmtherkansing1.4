@@ -21,10 +21,29 @@
 //     }
 //     console.log(geklikt);
 // });
+var geklikt = false;
+var player = ("trailer1");
 
-$("#afspelen").click(function(){
-    console.log('click');
-})
+$( document ).ready(function() {
+    $("#afspelen").click(function(event){
+        console.log('click');
+        event.preventDefault();
+        if (geklikt == false) {
+                    player.play();
+                    geklikt = true;
+                    $("#afspelen").css({ 
+            
+                    });
+            
+                } else {
+                    player.pause();
+                    geklikt = false;
+                    $("#afspelen").css({
+            
+                     });
+                }
+    });
+});
 
 
 
